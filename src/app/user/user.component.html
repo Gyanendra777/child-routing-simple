@@ -1,0 +1,13 @@
+
+<h4>Users page</h4>
+
+<!-- Nested links with User Ids -->
+<ul>
+    <!-- routerLink array "['/user', 1]" is equivalent to 'user/1' -->
+    <li><a [routerLink]="['/user', 1]">User 1</a></li>
+    <li><a [routerLink]="['/user', 2]">User 2</a></li>
+    <li><a [routerLink]="['/user', 3]">User 3</a></li>
+</ul>
+
+<!-- Adding router-outlet here so the User detail component will display inside the User component -->
+<router-outlet></router-outlet>
